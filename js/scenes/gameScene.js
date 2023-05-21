@@ -79,7 +79,6 @@ class gameScene extends Phaser.Scene {
         this.physics.add.overlap(player, stars, this.collectStar, null, this);
 
         this.physics.add.collider(player, bombs, this.hitBomb, null, this);
-
     }
 
     update() {
@@ -143,8 +142,5 @@ class gameScene extends Phaser.Scene {
         player.anims.play('turn');
 
         gameOver = true;
-
     }
-
-
 }
